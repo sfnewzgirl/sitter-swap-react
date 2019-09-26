@@ -1,4 +1,4 @@
-.App {
+.sitter-swap-app {
   text-align: center;
 }
 
@@ -6,7 +6,7 @@
   height: 40vmin;
 }
 
-.App-header {
+.sitter-swap-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
