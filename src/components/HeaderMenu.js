@@ -10,7 +10,9 @@ class HeaderMenu extends React.Component {
     
     return navigation.map(nav => {
       return (
-        <li><a href={nav.path}>{nav.label}</a></li>
+        <li key={nav.label}>
+          <a href={nav.path}>{nav.label}</a>
+        </li>
       );
     });
   }
