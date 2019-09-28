@@ -1,0 +1,13 @@
+.sitter-swap-header {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; 
+  font-size: calc(10px + 2vmin);
+  color: #282c34;
+}
+
+.sitter-swap-logo {
+  flex-direction: column;
+  justify-content: flex-start;
+}
