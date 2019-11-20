@@ -5,14 +5,14 @@ import './Header.css';
 class Header extends React.Component {
   render() {
     return (
-      <div className="sitter-swap-header">
+      <header className="sitter-swap-header">
         <div className="sitter-swap-logo">
           <h1>SitterSwap</h1>
         </div>
-        <div className="sitter-swap-header-menu">
-          <HeaderMenu />
-        </div>
-      </div>
+        <nav className="sitter-swap-header-menu">
+          <HeaderMenu className="sitter-swap-header-menu" />
+        </nav>
+      </header>
     )
   }
 }
