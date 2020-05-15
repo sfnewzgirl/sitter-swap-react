@@ -1,6 +1,6 @@
 import AboutPage from './pages/AboutPage';
 import {BrowserRouter as Router, Route} from "react-router-dom";
-import Header from './components/Header';
+import Header from './components/Header/Header';
 import LoginPage from './pages/LoginPage';
 import LogoutPage from './pages/LogoutPage';
 import React from 'react';

@@ -1,15 +1,14 @@
-import {defaultButtons, headerButtons} from '../models/headerButtons';
+import {defaultButtons, headerButtons} from '../../models/headerButtons';
 import React from 'react';
 import './HeaderMenu.css';
 
 class HeaderMenu extends React.Component {
   render() {
-    console.log('HeaderMenu props', this.props);
-    // let loggedIn = this.props.loggedIn;
-    let loggedIn = true;
+    let loggedIn = this.props.loggedIn || false;
     let navigation = headerButtons.filter(button => button.loggedIn === loggedIn);
     navigation.unshift(defaultButtons[0]);
 
+    // TODO Turn li/a into Buttons
     return navigation.map(nav => {
       return (
         <li key={nav.label}>
